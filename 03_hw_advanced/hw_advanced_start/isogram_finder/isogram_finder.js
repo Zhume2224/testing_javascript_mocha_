@@ -9,7 +9,8 @@ IsogramFinder.prototype.isIsogram = function () {
     const turnToArray = this.wordToLow.split('');
     return turnToArray.every(
       (letter, index) => {
-        return turnToArray.indexOf(letter) === index;
+        return
+         turnToArray.indexOf(letter) === index;
       }
     );
   };
